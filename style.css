@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Hind Madurai", sans-serif;
+    width:90%;
+    margin: 0 auto;
+}
+.logo-section{
+    align-items: center;
+}
+.logo-section h4 {
+    color:rgba(0, 103, 71, 1);
+    font-weight: 900;
+    line-height: 1.1;
+    font-size:22px;
+}
+.logo{
+    width:55px;
+    height: 55px;
+}
+.d-flex{
+    display: flex;
+}
+
+nav{
+    padding:24px 0;
+    justify-content: space-between;
+}
+.counters, .counter-container-a,.counter-container-b{
+    display:flex;
+}
+.counter-container-a,.counter-container-b{
+    margin:0 15px;
+    align-items: center;
+}
+.counter-container-a{
+    font-weight: bold;
+    background-color: #d4fce366;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size: 18px;
+}
+.counter-container-b{
+    font-weight: semi-bold;
+    background-color: #00A63E;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size: 18px;
+    color:#fff;
+}
+
+.counters img{
+    width:24px;
+    height: 24px;
+}
+.hero{
+    
+}
