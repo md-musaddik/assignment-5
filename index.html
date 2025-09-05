@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency-Hotline</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
                     <img src="assets/heart.png" alt="">
                 </div>
                 <div class="counter-container-a">
-                    <p>100</p>&nbsp;&nbsp;
+                    <p id="coins">100</p>&nbsp;
                     <img src="assets/coin.png" alt="">
                 </div>
                 <div class="counter-container-b">
@@ -46,8 +47,8 @@
                 <h4 id="dail-num">999</h4>
                 <p class="tag">All</p>
                 <div class="buttons">
-                    <button class="copy">Copy</button>
-                    <button class="call">Call</button>
+                    <button class="copy"><i class="fa-solid fa-copy"></i> Copy</button>
+                    <button class="call"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="card">
@@ -60,8 +61,8 @@
                 <h4 id="dail-num">999</h4>
                 <p class="tag">Police</p>
                 <div class="buttons">
-                    <button class="copy">Copy</button>
-                    <button class="call">Call</button>
+                    <button class="copy"><i class="fa-solid fa-copy"></i> Copy</button>
+                    <button class="call"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="card">
@@ -74,8 +75,22 @@
                 <h4 id="dail-num">999</h4>
                 <p class="tag">Fire</p>
                 <div class="buttons">
-                    <button class="copy">Copy</button>
-                    <button class="call">Call</button>
+                    <button class="copy"><i class="fa-solid fa-copy"></i> Copy</button>
+                    <button class="call"><i class="fa-solid fa-phone"></i> Call</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icons">
+                    <img src="assets/ambulance.png" alt="">
+                    <img class="heart" src="assets/heart1.png" alt="">
+                </div>
+                <h5>Ambulance Service</h5>
+                <p>Ambulance</p>
+                <h4 id="dail-num">1994-999999</h4>
+                <p class="tag">Health</p>
+                <div class="buttons">
+                    <button class="copy"><i class="fa-solid fa-copy"></i> Copy</button>
+                    <button class="call"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="card">
@@ -83,13 +98,13 @@
                     <img src="assets/emergency.png" alt="">
                     <img class="heart" src="assets/heart1.png" alt="">
                 </div>
-                <h5>National Emergency Number</h5>
-                <p>National Emergency</p>
-                <h4 id="dail-num">999</h4>
-                <p class="tag">All</p>
+                <h5>Women & Child Helpline</h5>
+                <p>Women & Child Helpline</p>
+                <h4 id="dail-num">109</h4>
+                <p class="tag">Help</p>
                 <div class="buttons">
-                    <button class="copy">Copy</button>
-                    <button class="call">Call</button>
+                    <button class="copy"><i class="fa-solid fa-copy"></i> Copy</button>
+                    <button class="call"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="card">
@@ -97,27 +112,13 @@
                     <img src="assets/emergency.png" alt="">
                     <img class="heart" src="assets/heart1.png" alt="">
                 </div>
-                <h5>National Emergency Number</h5>
-                <p>National Emergency</p>
-                <h4 id="dail-num">999</h4>
-                <p class="tag">All</p>
+                <h5>Anti-Corruption Helpline</h5>
+                <p>Anti-Corruption</p>
+                <h4 id="dail-num">106</h4>
+                <p class="tag">Govt.</p>
                 <div class="buttons">
-                    <button class="copy">Copy</button>
-                    <button class="call">Call</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icons">
-                    <img src="assets/emergency.png" alt="">
-                    <img class="heart" src="assets/heart1.png" alt="">
-                </div>
-                <h5>National Emergency Number</h5>
-                <p>National Emergency</p>
-                <h4 id="dail-num">999</h4>
-                <p class="tag">All</p>
-                <div class="buttons">
-                    <button class="copy">Copy</button>
-                    <button class="call">Call</button>
+                    <button class="copy"><i class="fa-solid fa-copy"></i> Copy</button>
+                    <button class="call"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             
@@ -125,12 +126,11 @@
             
             
         </div>
-        <div class="history-section">
+        <div id="history-section">
             <div class="history-header">
-                <div><img class="clock" src="assets/clock.png" alt="">
+                <div class="d-flex"><img class="clock" src="assets/clock.png" alt="">&nbsp;
                 <h5>Call History</h5></div>
-                <button class="btn-green">Clear</button>
-                
+                <button id="clear" class="btn-green">Clear</button>
             </div>
             
         </div>
