@@ -15,7 +15,8 @@ header{
     margin: 0 auto;
 }
 .logo-section{
-    align-items: center;
+    align-items: center; 
+    gap:10px;
 }
 .logo-section h4 {
     color:rgba(0, 103, 71, 1);
@@ -75,8 +76,12 @@ nav{
     justify-content: space-between;
 }
 .icons img:first-child{
-    width:60px;
-    height: 60px;
+    width:30px;
+    height: 30px;
+    padding:20px;
+    background-color: #FFE3E2;
+    margin-bottom:5px;
+    border-radius: 16px;
 }
 .icons img:last-child{
     width: 24px;
@@ -103,6 +108,9 @@ main{
 }
 .card p,h4,h5{
     margin-top:5px;
+}
+.card h5{
+    font-size:20px;
 }
 .buttons{
     margin-top: 10px;
@@ -154,4 +162,10 @@ main{
     padding:4px 25px;
     border-radius: 30px;
     color:#fff;
+}
+
+@media screen and (max-width:576px){
+    main{
+        flex-direction: column;
+    }
 }
