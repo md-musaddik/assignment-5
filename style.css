@@ -175,4 +175,23 @@ main{
     main{
         flex-direction: column;
     }
+    .w-90{
+        width:100%;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .card-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .counter-container-a,.counter-container-b{
+        margin: 0 5px;
+    }
+    .card-section{
+        margin: 0 auto;
+    }
+    #history-section{
+      width: 80%;
+      margin:0 auto;
+    }
 }

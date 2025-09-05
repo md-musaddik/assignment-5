@@ -16,7 +16,7 @@ for(let callBtn of callButtons){
     callBtn.addEventListener("click",function(){
         let serviceName=callBtn.parentNode.parentNode.children[1].innerText;
         let serviceNum=callBtn.parentNode.parentNode.children[3].innerText;
-        let historyParent=document.getElementById("history-section");
+        let historyParent=document.getElementById("call-history");
         let coins=parseInt(document.getElementById("coins").innerText);
         let date=new Date().toLocaleTimeString();
         if(coins>=20){
@@ -41,5 +41,21 @@ for(let callBtn of callButtons){
 }
 
 //clear button
-document.getElementById()
+document.getElementById("clear").addEventListener("click",function(){
+    document.getElementById("call-history").innerHTML="";
+})
+
+//copy button functionaliy
+let copyCount=parseInt(document.getElementById("copyCount").innerText);
+let copyBtns=document.getElementsByClassName("copy");
+for(let copyBtn of copyBtns){
+    let copyText=copyBtn.parentNode.parentNode.children[3].innerText;
+    copyBtn.addEventListener("click",function(){
+        navigator.clipboard.writeText(copyText);
+        alert("Number has been copied");
+        copyCount++;
+        document.getElementById("copyCount").innerText=copyCount;
+        
+    
+})}
 
