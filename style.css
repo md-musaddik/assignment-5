@@ -186,6 +186,7 @@ main{
     }
     .counter-container-a,.counter-container-b{
         margin: 0 5px;
+        padding:10px 20px;
     }
     .card-section{
         margin: 0 auto;
@@ -193,5 +194,22 @@ main{
     #history-section{
       width: 80%;
       margin:0 auto;
+    }
+    .logo-section{
+        margin-bottom:8px;
+    }
+    nav{
+        padding:12px 0;
+        align-items: center;
+    }
+    .hero{
+        padding:20px 0;
+    }
+    hero h1{
+        
+    }
+    .hero img{
+        width:150px;
+        height:150px;
     }
 }
